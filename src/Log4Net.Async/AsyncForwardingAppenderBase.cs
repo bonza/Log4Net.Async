@@ -4,7 +4,7 @@
     using log4net.Core;
     using log4net.Util;
     using System;
-    using System.Runtime.Remoting.Messaging;
+    using System.Threading;
 
     public abstract class AsyncForwardingAppenderBase : ForwardingAppender
     {
@@ -13,6 +13,7 @@
         private const FixFlags DefaultFixFlags = FixFlags.Partial;
         private FixFlags fixFlags = DefaultFixFlags;
         private LoggingEventHelper loggingEventHelper;
+        private System.Threading.AsyncLocal<object> _httpContext;
 
         #endregion Private Members
 
@@ -29,14 +30,8 @@
         /// </summary>
         protected internal object HttpContext
         {
-            get
-            {
-                return CallContext.HostContext;
-            }
-            set
-            {
-                CallContext.HostContext = value;
-            }
+            get { return _httpContext; }
+            set { _httpContext = new AsyncLocal<object> {Value = value}; }
         }
 
         /// <summary>
