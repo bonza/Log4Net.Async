@@ -1,12 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;net47</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net47</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="log4net" Version="2.0.8" />
-    <PackageReference Include="RhinoMocks" Version="3.6.1" />
   </ItemGroup>
 
 </Project>

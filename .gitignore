@@ -160,3 +160,4 @@ $RECYCLE.BIN/
 /src/*.suo
 
 /src/*.user
+/src/.vs/*
