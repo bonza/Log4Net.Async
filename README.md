@@ -1,7 +1,9 @@
 Log4Net.Async
 =============
 
-[![Build status](https://ci.appveyor.com/api/projects/status/fpn8apunhe0fr1y3)](https://ci.appveyor.com/project/cjbhaines/log4net-async)
+[Build status](https://ci.appveyor.com/api/projects/status/meh8bsw7y3ke6abb?svg=true)](https://ci.appveyor.com/project/bonza/log4net-async)
+
+FORK OF https://github.com/cjbhaines/Log4Net.Async !
 
 This library provides asynchronous Log4Net logging.  Application performance is improved by performing message appending I/O operations on one or more background threads.
 
