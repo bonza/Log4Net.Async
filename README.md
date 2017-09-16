@@ -1,7 +1,7 @@
 Log4Net.Async
 =============
 
-[Build status](https://ci.appveyor.com/api/projects/status/meh8bsw7y3ke6abb?svg=true)](https://ci.appveyor.com/project/bonza/log4net-async)
+[![Build status](https://ci.appveyor.com/api/projects/status/meh8bsw7y3ke6abb?svg=true)](https://ci.appveyor.com/project/bonza/log4net-async)
 
 FORK OF https://github.com/cjbhaines/Log4Net.Async !
 
